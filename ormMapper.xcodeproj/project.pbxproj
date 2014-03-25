@@ -10,6 +10,12 @@
 		795FD0AE18DA4CF00083FC0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795FD0AD18DA4CF00083FC0F /* Foundation.framework */; };
 		795FD0B118DA4CF00083FC0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD0B018DA4CF00083FC0F /* main.m */; };
 		795FD0B518DA4CF00083FC0F /* ormMapper.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 795FD0B418DA4CF00083FC0F /* ormMapper.1 */; };
+		795FD0BF18DA4E650083FC0F /* Pikachu.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD0BE18DA4E650083FC0F /* Pikachu.m */; };
+		795FD0C118DA51BD0083FC0F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 795FD0C018DA51BD0083FC0F /* libsqlite3.0.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		7980E4A318DF1A5600FD0EA7 /* Bean.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E4A218DF1A5600FD0EA7 /* Bean.m */; };
+		7980E4A718DF2B2300FD0EA7 /* SQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E4A618DF2B2300FD0EA7 /* SQLite.m */; };
+		7980E4AA18DF2B4D00FD0EA7 /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E4A918DF2B4D00FD0EA7 /* Adapter.m */; };
+		D80B73F63A0963686EFA41FE /* Attack.m in Sources */ = {isa = PBXBuildFile; fileRef = D80B7735E4A2E0B109989F6C /* Attack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +37,17 @@
 		795FD0B018DA4CF00083FC0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795FD0B318DA4CF00083FC0F /* ormMapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ormMapper-Prefix.pch"; sourceTree = "<group>"; };
 		795FD0B418DA4CF00083FC0F /* ormMapper.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ormMapper.1; sourceTree = "<group>"; };
+		795FD0BD18DA4E650083FC0F /* Pikachu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pikachu.h; sourceTree = "<group>"; };
+		795FD0BE18DA4E650083FC0F /* Pikachu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pikachu.m; sourceTree = "<group>"; };
+		795FD0C018DA51BD0083FC0F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		7980E4A118DF1A5600FD0EA7 /* Bean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bean.h; sourceTree = "<group>"; };
+		7980E4A218DF1A5600FD0EA7 /* Bean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bean.m; sourceTree = "<group>"; };
+		7980E4A518DF2B2300FD0EA7 /* SQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
+		7980E4A618DF2B2300FD0EA7 /* SQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLite.m; sourceTree = "<group>"; };
+		7980E4A818DF2B4D00FD0EA7 /* Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
+		7980E4A918DF2B4D00FD0EA7 /* Adapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
+		D80B7735E4A2E0B109989F6C /* Attack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attack.m; sourceTree = "<group>"; };
+		D80B7839684AD0E08E09D283 /* Attack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795FD0C118DA51BD0083FC0F /* libsqlite3.0.dylib in Frameworks */,
 				795FD0AE18DA4CF00083FC0F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +83,7 @@
 		795FD0AC18DA4CF00083FC0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				795FD0C018DA51BD0083FC0F /* libsqlite3.0.dylib */,
 				795FD0AD18DA4CF00083FC0F /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -73,6 +92,9 @@
 		795FD0AF18DA4CF00083FC0F /* ormMapper */ = {
 			isa = PBXGroup;
 			children = (
+				7980E4A418DF2B0500FD0EA7 /* Adapter */,
+				795FD0BC18DA4E3A0083FC0F /* Mapper */,
+				795FD0BB18DA4E2B0083FC0F /* Bean */,
 				795FD0B018DA4CF00083FC0F /* main.m */,
 				795FD0B418DA4CF00083FC0F /* ormMapper.1 */,
 				795FD0B218DA4CF00083FC0F /* Supporting Files */,
@@ -86,6 +108,37 @@
 				795FD0B318DA4CF00083FC0F /* ormMapper-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		795FD0BB18DA4E2B0083FC0F /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				795FD0BD18DA4E650083FC0F /* Pikachu.h */,
+				795FD0BE18DA4E650083FC0F /* Pikachu.m */,
+				D80B7735E4A2E0B109989F6C /* Attack.m */,
+				D80B7839684AD0E08E09D283 /* Attack.h */,
+			);
+			name = Bean;
+			sourceTree = "<group>";
+		};
+		795FD0BC18DA4E3A0083FC0F /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				7980E4A118DF1A5600FD0EA7 /* Bean.h */,
+				7980E4A218DF1A5600FD0EA7 /* Bean.m */,
+				7980E4A818DF2B4D00FD0EA7 /* Adapter.h */,
+				7980E4A918DF2B4D00FD0EA7 /* Adapter.m */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
+		7980E4A418DF2B0500FD0EA7 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				7980E4A518DF2B2300FD0EA7 /* SQLite.h */,
+				7980E4A618DF2B2300FD0EA7 /* SQLite.m */,
+			);
+			name = Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7980E4AA18DF2B4D00FD0EA7 /* Adapter.m in Sources */,
+				7980E4A318DF1A5600FD0EA7 /* Bean.m in Sources */,
+				7980E4A718DF2B2300FD0EA7 /* SQLite.m in Sources */,
 				795FD0B118DA4CF00083FC0F /* main.m in Sources */,
+				795FD0BF18DA4E650083FC0F /* Pikachu.m in Sources */,
+				D80B73F63A0963686EFA41FE /* Attack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,18 +276,30 @@
 		795FD0B918DA4CF00083FC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
+					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
+					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ormMapper/ormMapper-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		795FD0BA18DA4CF00083FC0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
+					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
+					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ormMapper/ormMapper-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -252,6 +322,7 @@
 				795FD0BA18DA4CF00083FC0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
