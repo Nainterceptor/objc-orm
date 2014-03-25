@@ -12,12 +12,14 @@
 
 @interface Bean : NSObject
 
-@property (nonatomic, retain) NSNumber *id;
+@property(nonatomic, retain) NSNumber *id;
 
--(id)initWithProperty:(NSString *)property andValue:(id)value;
+- (id)initWithProperty:(NSString *)property andValue:(id)value;
 
--(void) dump;
--(void) persist;
--(void) remove;
+- (void)dump;
+
+- (void)persist;
+
+- (void)remove;
 
 @end

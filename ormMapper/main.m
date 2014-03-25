@@ -9,8 +9,7 @@
 #import "Pikachu.h"
 #import "Attack.h"
 
-int main(int argc, const char * argv[])
-{
+int main(int argc, const char *argv[]) {
     @autoreleasepool {
         //With SQLite, DB is usually created into Documents
         NSLog(@"==================================");
@@ -40,8 +39,8 @@ int main(int argc, const char * argv[])
 
         NSLog(@"----------------------------------");
         NSLog(@"Increment level by 1 and power by 10");
-        pika.level = [NSNumber numberWithInt:[pika.level intValue]+1];
-        pika.power = [NSNumber numberWithInt:[pika.power intValue]+10];
+        pika.level = [NSNumber numberWithInt:[pika.level intValue] + 1];
+        pika.power = [NSNumber numberWithInt:[pika.power intValue] + 10];
         [pika persist];
         sleep(1);
 
@@ -109,8 +108,6 @@ int main(int argc, const char * argv[])
 
         NSLog(@"----------------------------------");
         NSLog(@"If you looking for change Adapter (SQLite here), create a new adapter and change it around 'Change adapter here' comment : It's easy to change Storage engine");
-
-
 
 
     }

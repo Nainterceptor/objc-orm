@@ -13,9 +13,9 @@
 
 @interface Attack : Bean
 
-@property (nonatomic, retain) NSNumber *id;
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSNumber *power;
-@property (nonatomic, retain) Bean *pikachu; //Class name, lowercase
+@property(nonatomic, retain) NSNumber *id;
+@property(nonatomic, retain) NSString *name;
+@property(nonatomic, retain) NSNumber *power;
+@property(nonatomic, retain) Bean *pikachu; //Class name, lowercase
 
 @end

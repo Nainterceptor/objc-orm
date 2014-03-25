@@ -12,7 +12,7 @@
 
 @interface SQLite : Adapter
 
-@property (nonatomic) int lastInsert;
+@property(nonatomic) int lastInsert;
 
 - (id)init;
 

@@ -13,10 +13,10 @@
 
 @interface Pikachu : Bean
 
-@property (nonatomic, retain) NSNumber *id;
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSNumber *level;
-@property (nonatomic, retain) NSNumber *power;
-@property (nonatomic, retain) NSMutableArray *attack;
+@property(nonatomic, retain) NSNumber *id;
+@property(nonatomic, retain) NSString *name;
+@property(nonatomic, retain) NSNumber *level;
+@property(nonatomic, retain) NSNumber *power;
+@property(nonatomic, retain) NSMutableArray *attack;
 
 @end
