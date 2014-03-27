@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		795FD0AE18DA4CF00083FC0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795FD0AD18DA4CF00083FC0F /* Foundation.framework */; };
 		795FD0B118DA4CF00083FC0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD0B018DA4CF00083FC0F /* main.m */; };
-		795FD0B518DA4CF00083FC0F /* ormMapper.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 795FD0B418DA4CF00083FC0F /* ormMapper.1 */; };
+		795FD0B518DA4CF00083FC0F /* ormMapper.1 in Copy Files */ = {isa = PBXBuildFile; fileRef = 795FD0B418DA4CF00083FC0F /* ormMapper.1 */; };
 		795FD0BF18DA4E650083FC0F /* Pikachu.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD0BE18DA4E650083FC0F /* Pikachu.m */; };
 		795FD0C118DA51BD0083FC0F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 795FD0C018DA51BD0083FC0F /* libsqlite3.0.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		7980E4A318DF1A5600FD0EA7 /* Bean.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E4A218DF1A5600FD0EA7 /* Bean.m */; };
@@ -19,14 +19,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		795FD0A818DA4CF00083FC0F /* CopyFiles */ = {
+		795FD0A818DA4CF00083FC0F /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				795FD0B518DA4CF00083FC0F /* ormMapper.1 in CopyFiles */,
+				795FD0B518DA4CF00083FC0F /* ormMapper.1 in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -150,7 +151,7 @@
 			buildPhases = (
 				795FD0A618DA4CF00083FC0F /* Sources */,
 				795FD0A718DA4CF00083FC0F /* Frameworks */,
-				795FD0A818DA4CF00083FC0F /* CopyFiles */,
+				795FD0A818DA4CF00083FC0F /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -167,7 +168,9 @@
 		795FD0A218DA4CF00083FC0F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = 169174supinfo;
 			};
 			buildConfigurationList = 795FD0A518DA4CF00083FC0F /* Build configuration list for PBXProject "ormMapper" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -276,30 +279,28 @@
 		795FD0B918DA4CF00083FC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
-					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
-					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "XCode Code Sign";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ormMapper/ormMapper-Prefix.pch";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
 		795FD0BA18DA4CF00083FC0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
-					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
-					"\"${PROJECT_DIR}/../../../../usr/local/mysql-connector-c-6.1.3-osx10.7-x86_64/lib\"/**",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "XCode Code Sign";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ormMapper/ormMapper-Prefix.pch";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
